@@ -71,7 +71,8 @@ class ViewController: UIViewController {
     
     @IBAction func comprobar(_ sender: UIButton) {
         
-        let letra = Letra.text?.characters.first
+        let letra = Letra.text?.lowercased().characters.first
+        
         var error = true
         
         for x in 1...oculta.characters.count {
